@@ -1,59 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>James's Portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>James Calder</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+    </head>
+    <body>
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><strong>James Calder</strong></li>
+                </ul>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!--May add a blog later-->
+                </ul>
+            </nav>
+        </header>
 
-    <canvas id="bg"></canvas>
+        <main class="container">
+            <div class="grid">
+                <div>
+                    <section id="about">
+                        <hgroup>
+                            <h2>About Me</h2>
+                            <p>
+                                I'm James Calder, a junior software engineer,
+                                based in KC.
+                            </p>
+                            <h5>Interests</h5>
+                            <ul>
+                                <li>Cars/Racing (mostly stage rally)</li>
+                                <li>Games (video and board, alike)</li>
+                                <li>Mountain Biking</li>
+                            </ul>
+                        </hgroup>
+                    </section>
 
-    <main>
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <p>Some of my recent projects include:</p>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://github.com/rosnMagar/TrumanHallDesk"
+                                    >Truman Halldesk</a
+                                >
+                                – Software redesign of residence hall desk
+                                software, Software Engineering group project
+                            </li>
+                            <li>
+                                <a
+                                    href="https://devpost.com/software/crowdsenseai"
+                                    >CrowdSense</a
+                                >
+                                – Hackathon submission, with Roshan Thapa Magar
+                                and Tyler Bryan
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/jcxldxr816/gamejamSpring26"
+                                    >On Record</a
+                                >
+                                – Gamejam submission, first place winner, rough
+                                around the edges but a strong proof of concept.
+                            </li>
+                        </ul>
+                    </section>
 
-      <section class="name hoverable">
-        <h3 class="hint">Hover over this card!</h3>
-        <h1><strong>James Calder</strong></h1>
-        <p class="bio">
-          I am a student at Truman State University, pursuing a Bachelor's of Science in Computer Science! I made this website using three.js and HTML/CSS, with some help from Vite.
-        </p>
-      </section>
+                    <section id="contact">
+                        <h2>Contact</h2>
+                        <a href="https://www.linkedin.com/in/jamescalder816/"
+                            >LinkedIn</a
+                        >
+                        <a href="https://github.com/jcxldxr816">Github</a>
+                    </section>
+                </div>
+                <div>
+                    <img src="src/0002.jpg" alt="James Calder" width="50%" />
+                </div>
+            </div>
+        </main>
 
-      <section class="hoverable">
-        <h2>Important Links</h2>
-        <p>Connect with me on LinkedIn!</p>
-        <p>Also, feel free to check out some of my other projects on Github.</p>
-        <!-- <div class="fade-in-text"> -->
-        <div>
-          <a class="link" href="https://www.linkedin.com/in/jamescalder816/">LinkedIn</a>
-          <a class="link" href="https://github.com/jcxldxr816">Github</a>
-        </div>
-      </section>
-
-	    <video class="topvideo" width="560" height="315" controls muted>
-        <source src="res/StuddyBuddyDemoShort.mp4" type="video/mp4">
-        <!-- <source src="movie.ogg" type="video/ogg"> -->
-        Your browser does not support the video tag.
-      </video>
-
-      <section class="hoverable">
-        <h2>Projects</h2>
-        <p>Here are a couple of my recent projects! The top video is a basic demo of the StudyBuddy Android app, which I helped create. We are working on re-building the app in ReactNative.</p>
-        <p>The bottom video is a short demo of Chase2D, a game I helped create for the HYEL iOS app.</p>
-      </section>
-
-      <iframe class="botvideo" width="560" height="315" src="https://www.youtube.com/embed/psgIjcaSOwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-      <section class="hoverable">
-        <h2>More About Me</h2>
-        <p>I've worked in many different languages over the years and I'm always eager to learn! I've worked with Python, C#, C++, Java, Javascript, and Swift. Currently, I'm learning how to build websites/apps in React, to further expand my toolkit.</p>
-        <p>In my free time, I like to play and make games. I've played around with different game concepts in Unity, as well as Godot. In the future, I hope to make a full game entirely on my own, and publish it on Steam.</p>
-        <p>I'm familiar with both Windows and Mac, and I'm comfortable doing many things in Linux. I also have experience with Adobe Photoshop and Illustrator.</p>
-      </section>
-    </main>
-
-    <script type="module" src="/main.js"></script>
-  </body>
+        <footer class="container">
+            <small>James Calder – May, 2026</small>
+        </footer>
+    </body>
 </html>
